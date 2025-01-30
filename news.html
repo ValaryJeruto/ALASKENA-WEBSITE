@@ -88,6 +88,33 @@
       bottom: 0;
       width: 100%;
     }
+
+    /* Marquee Styling */
+    .marquee {
+      background-color: #f4f4f4;
+      padding: 15px 0;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .marquee-container {
+      display: flex;
+      gap: 30px;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marquee-text {
+      font-size: 1.5em;
+      color: #333;
+      white-space: nowrap;
+      padding-right: 50px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body>
@@ -103,11 +130,21 @@
     <a href="contact.html">Contact</a>
   </nav>
   
+  <!-- Marquee Section -->
+  <div class="marquee">
+    <div class="marquee-container">
+      <div class="marquee-text">New dometry is being constructed and pupils will be borders from next term.</div>
+      <div class="marquee-text">Alaskena athletics team will start soon, pupils are doing practise!</div>
+      <div class="marquee-text">Opening exams will commence soon.</div>
+    </div>
+  </div>
+
   <section>
     <h2>Latest News</h2>
     <ul class="news-list">
-      <li>New dometry is being constructed and students will be borders from next term.</li>
-      <li>Alaskena athletics team will start at district championship!</li>
+      <li>New dometry is being constructed and pupils will be borders from next term.</li>
+      <li>Alaskena athletics team will start soon, pupils are doing practise!</li>
+      <li>Opening exams will commence soon.</li>
     </ul>
   </section>
 
@@ -116,4 +153,5 @@
   </footer>
 </body>
 </html>
+
 
